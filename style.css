@@ -1,5 +1,5 @@
 body {
-    background-image: url("arch_anime.jpg");
+    background-image: url("arch_logo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -11,32 +11,37 @@ body {
     font-size: 16px;
 }
 
-a, a:visited, a:hover {
-    color: #0f0;
-    text-decoration: none;
-}
-a:active {
-    color: #0f0;
-    text-decoration: none;
+h2 {
+    text-align: center;
 }
 
-button {
-    background-color: rgba(49, 48, 48, 0.8);
+.terminal-body p {
+    margin: 10px 0;
+}
+
+code {
+    background-color: rgba(49, 48, 48, 0.5);
+    padding: 2px 4px;
+    border-radius: 3px;
     color: #0f0;
+}
+
+a, a:visited, a:active {
+    padding: 5px;
     border: 3px solid #4d48e8;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    font-weight: bold;
+    border-radius: 5px;
+    color: #0f0;
+    text-decoration: none;
 }
 
-button:hover {
+a:hover {
     box-shadow: 0 0 10px #4d48e8;
 }
 
 .terminal-container {
     width: 90%;
     border: 5px solid #4d48e8;
+    border-radius: 35px;
     margin: 20px;
     padding: 20px;
     background-color: rgba(49, 48, 48, 0.8);
@@ -44,9 +49,12 @@ button:hover {
 }
 
 .terminal-header {
+    display: flex;
     align-items: center;
+    gap: 15px;
     margin-bottom: 10px;
     border: 3px solid #4d48e8;
+    border-radius: 15px;
     padding: 10px;
     background-color: rgba(49, 48, 48, 0.5);
 }
@@ -82,15 +90,23 @@ button:hover {
     outline: none;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
 .info-col {
     width: 20%;
     padding: 10px;
+    text-align: right;
     color: yellow;
 }
 
 .data-col {
-    width: 70%;
+    width: 80%;
     padding: 10px;
+    text-align: left;
     color: #0f0;
     font-weight: bold;
 }
