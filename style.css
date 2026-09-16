@@ -93,22 +93,44 @@ a:hover {
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
     margin-top: 20px;
 }
+
 th {
     color: yellow;
 }
+
 th, td {
-    width: 25%;
     font-weight: bold;
     padding: 10px;
     text-align: left;
 }
-tr:hover {
+
+th:nth-child(1), td:nth-child(1) { width: 20%; }
+th:nth-child(2), td:nth-child(2) { width: 40%; }
+th:nth-child(3), td:nth-child(3) { width: 20%; }
+th:nth-child(4), td:nth-child(4) { width: 20%; }
+
+tbody tr:hover td {
     background-color: rgba(49, 48, 48, 0.5);
-    border: 1px solid #4d48e8;
-    border-radius: 5px;
+    border-top: 1px solid #4d48e8;
+    border-bottom: 1px solid #4d48e8;
+    box-shadow: 0 0 10px #d04ce1;
+}
+
+tr:hover td:first-child {
+    border-radius: 15px 0 0 15px;
+    border-left: 1px solid #4d48e8;
+    color: #d04ce1;
+}
+
+tr:hover td:last-child {
+    border-radius: 0 15px 15px 0;
+    border-right: 1px solid #4d48e8;
+    color: #d04ce1;
 }
 
 .info-col {
