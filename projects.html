@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <a href="home.html">~/</a>
+            <a href="aboutme.html">~/AboutMe</a>
+            <a href="projects.html">~/Projects</a>
+            <a href="contact.html">~/Contact</a>
+        </div>
+        <div class="terminal-body">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I have worked on:</p>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Language</th>
+                    <th>Technologies Used</th>
+                </tr>
+                <tr onclick="window.open('https://github.com/YerdosNar/p2p', '_blank');" style="cursor: pointer;">
+                    <td>OpenP2P</td>
+                    <td>A Peer-To-Peer terminal application for messaging and file transfer.
+                        All traffic is End-to-End encrypted using LibSodium. 
+                    </td>
+                    <td>C11</td>
+                    <td>POSIX threads, LibSodium, </td>
+                </tr>
+                <tr onclick="window.open('https://github.com/YerdosNar/3x-ui-auto', '_blank');" style="cursor: pointer;">
+                    <td>Project 2</td>
+                    <td>A brief description of Project 2.</td>
+                    <td>Technology C, Technology D</td>
+                </tr>
+                <!-- Add more projects as needed -->
+            </table>
+        </div>
+    </div>
+</body>
+</html>
