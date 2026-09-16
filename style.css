@@ -34,6 +34,11 @@ code {
     text-decoration: none;
 }
 
+a {
+    color: #0f0;
+    text-decoration: none;
+}
+
 a:hover {
     box-shadow: 0 0 10px #4d48e8;
 }
