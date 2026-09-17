@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Home | YerdosNar{% endblock %}
+
+{% block content %}
+<h2>Home</h2>
+<p>Welcome to my portfolio!</p>
+<p>My name is Yerdos Narzhigitov.</p>
+<p>Help message:</p>
+<ul>
+    <li>cd - Change directory.</li>
+    <li>ls - List the contents of the current directory.</li>
+    <li>cat - Display the contents of a file.</li>
+    <li>help - Show this help message.</li>
+</ul>
+<p>Directories:</p>
+<ul>
+    <li><a href="/AboutMe">About Me</a> - contains information about me</li>
+    <li><a href="/Projects">Projects</a> - contains projects I have (been) working on</li>
+    <li><a href="/ContactMe">Contact</a> - contains contact information</li>
+</ul>
+{% endblock %}

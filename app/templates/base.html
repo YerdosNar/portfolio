@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>{% block title %}Yerdos Narzhigitov{% endblock %}</title>
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <a href="/">~/</a>
+            <a href="/AboutMe">~/AboutMe</a>
+            <a href="/Projects">~/Projects</a>
+            <a href="/ContactMe">~/Contact</a>
+        </div>
+        <main class="terminal-body">
+            {% block content %}{% endblock %}
+        </main>
+        <form action="/run" method="post" class="terminal-cmd">
+            <label class="terminal-prompt" for="cmd">user@portfolio:{{ cwd }}$</label>
+            <input id="cmd" name="command" class="terminal-input" autofocus
+            autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type a command...">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Contact | YerdosNar{% endblock %}
+
+{% block content %}
+<h2>Contact</h2>
+<p>You can reach me at:</p>
+<table>
+        <tr onclick="window.open('mailto:besway2000@gmail.com', '_blank')">
+                <td class="info-col">Email:</td>
+                <td class="data-col">besway2000@gmail.com</td>
+        </tr>
+        <tr onclick="window.open('https://github.com/YerdosNar', '_blank')">
+                <td class="info-col">GitHub:</td>
+                <td class="data-col"><a href="https://github.com/YerdosNar" target="_blank">YerdosNar</a></td>
+        </tr>
+        <tr onclick="window.open('https://www.linkedin.com/in/YerdosNar', '_blank')">
+                <td class="info-col">LinkedIn:</td>
+                <td class="data-col"><a href="https://www.linkedin.com/in/YerdosNar" target="_blank">Yerdos Narzhigitov</a></td>
+        </tr>
+</table>
+<p>You can also leave a message here</p>
+<form>
+        <!-- TODO: Comment leaving place -->
+</form>
+{% endblock %}
